@@ -27,7 +27,7 @@
 
     <!-- TCP frame -->
     <joint name="${prefix}tcp_joint" type="fixed">
-      <origin xyz="0 0 0.36" rpy="0 0 0"/>
+      <origin xyz="0 0 0.36" rpy="-3.14159265 0 -3.14159265"/>
       <parent link="${prefix}tool"/>
       <child link="${prefix}tcp"/>
     </joint>

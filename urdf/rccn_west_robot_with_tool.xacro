@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+    <robot name="rccn_west_robot_with_tool" xmlns:xacro="https://ros.org/wiki/xacro" >
+
+        <!-- west robot -->
+        <xacro:include filename="$(find rccn_west_robot)/urdf/rccn_west_robot_macro.xacro" />
+        <!-- end-effector -->
+        <xacro:include filename="tool.xacro" />
+
+        <!-- West Robot -->
+        <!-- The West Robot (KR300 R2500) xacro -->
+        <xacro:rccn_west_robot />
+        <!-- end-effector -->
+        <!-- Here we include the end-effector by setting the parameters -->
+        <!-- TODO: check end-effector link name of robot -->
+        <xacro:tool prefix="" connected_to="west_tool0"/>
+
+    </robot>
